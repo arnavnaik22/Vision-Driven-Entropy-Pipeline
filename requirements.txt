@@ -3,4 +3,6 @@ numpy
 cryptography
 matplotlib
 scipy
+pandas
+scikit-image
 pycryptodome

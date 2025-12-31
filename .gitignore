@@ -1,61 +1,74 @@
-# ===============================================
-# .gitignore for Random Motion-Based Encryption
-# ===============================================
-
-# 🐍 Python cache & compiled files
+# ================================
+# Python cache / compiled files
+# ================================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.log
-*.tmp
+*.py[cod]
+*$py.class
 
-# 🧪 Virtual environments
+# ================================
+# Virtual environments
+# ================================
 venv/
-env/
-ENV/
+.env/
+.env*/
 .venv/
-.env
 
-# 🧠 Project data (large or sensitive)
-data/*.mp4
-data/*.png
-data/*.jpg
-data/*.jpeg
-data/*.csv
-data/*.bin
-
-# 🔒 Results and generated outputs
-results/
-results/*.csv
-results/*.png
-results/*.bin
-results/*.mp4
-results/*.npy
-results/*.jpg
-results/*.jpeg
-
-# 🧰 IDE / Editor settings
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# 🧱 OS-specific junk
+# ================================
+# OS / Editor junk
+# ================================
 .DS_Store
 Thumbs.db
-desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# 🧩 Archive or backup files
-*.zip
-*.rar
-*.tar
-*.tar.gz
-*.bak
-*.old
+# ================================
+# Jupyter / interactive artifacts
+# ================================
+.ipynb_checkpoints/
 
-# ===============================================
-# Note:
-# Code inside src/, docs, and README.md 
-# WILL be tracked — that’s intentional.
-# ===============================================
+
+
+# ================================
+# Logs & temporary files
+# ================================
+*.log
+*.tmp
+*.temp
+
+# ================================
+# Large media / raw data
+# ================================
+data/*.mp4
+data/*.avi
+data/*.mov
+data/*.mkv
+
+# ================================
+# generated artifacts
+# ================================
+results/encrypted_demo.png
+results/entropy.csv
+
+# ================================
+# Build 
+# ================================
+build/
+dist/
+*.egg-info/
+
+# ================================
+# PDF
+# ================================
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
+
+# ================================
+# Security-sensitive leftovers
+# ================================
+*.key
+*.pem
+*.secret
