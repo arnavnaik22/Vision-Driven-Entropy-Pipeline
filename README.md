@@ -1,6 +1,4 @@
-Here is the final, production-ready `README.md`. I have applied standard GitHub Markdown formatting, added a **MermaidJS** diagram for the architecture (which GitHub renders automatically), and formatted the code blocks for easy copying.
 
-You can copy the raw code block below and save it directly as `README.md`.
 
 ```markdown
 # Random Motion–Based Entropy Extraction for Image Encryption
